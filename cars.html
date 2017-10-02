@@ -1,0 +1,487 @@
+<!doctype html>
+<html>
+	<head>
+		<title>this is the DP teamkart's assingment</title>
+		
+		<style type="text/css">
+			h1 {text-align:center;}
+			#aaa {background-color:black;width:150px;text-align:center;padding:20px;position:absolute;top:150px;left:150px;}
+			#aab {background-color:black;width:150px;text-align:center;padding:20px;position:absolute;top:150px;left:300px;}
+			#aac {background-color:black;width:150px;text-align:center;padding:20px;position:absolute;top:150px;left:450px;}
+			#aad {background-color:black;width:150px;text-align:center;padding:20px;position:absolute;top:150px;left:600px;}
+			#aae {background-color:black;width:150px;text-align:center;padding:20px;position:absolute;top:150px;left:750px;}
+			#aaf {background-color:black;width:150px;text-align:center;padding:20px;position:absolute;top:150px;left:900px;}
+			#aag {background-color:black;width:150px;text-align:center;padding:20px;position:absolute;top:150px;left:1050px;}
+			#aah {background-color:black;width:150px;text-align:center;padding:20px;position:absolute;top:150px;left:1200px;}
+			a:link {color:white;text-decoration:none;}
+			a:visited {color:white;text-decoration:none;}
+			a:hover {color:white;text-decoration:none;background-color:red;padding:20px;}
+			a:active {color:white;text-decoration:none;background-color:#6e0f0f;padding:20px;}
+			#baa {position: absolute; top: 2410px;left:150px;color:white;margin-bottom:70px;}
+			#bab {position: absolute; top: 210px;left:150px;color:white;margin-bottom:70px;}
+			#bac {position: absolute; top: 4640px;left:150px;color:white;margin-bottom:70px;}
+			#bad {position: absolute; top: 6850px;left:150px;color:white;margin-bottom:70px;}
+			table {width:1240;border: 3px white solid;text-align:center;padding:20px;}
+			body {background-color:#282828;}
+		</style>
+	</head>
+	
+	<body>
+		<h1><img src="logo-st.png" align="center"/></h1>
+		<div id="aaa"><a href="index.html">Home</a></div>
+		<div id="aab"><a href="about.html">About</a></div>
+		<div id="aac"><a href="cars.html">Cars</a></div>
+		<div id="aad"><a href="team.html">Team</a></div>
+		<div id="aae"><a href="gallery.html">Gallery</a></div>
+		<div id="aaf"><a href="blog.html">Blog</a></div>
+		<div id="aag"><a href="sponsors.html">Sponsors</a></div>
+		<div id="aah"><a href="contacts.html">Contact Us</a></div>
+		<div id="baa">
+			<table width="1240px" border="3" color="white" cellpadding="10">
+			<big><big>
+				<tr>
+					<th colspan="2"><h1>K2</h1></th>
+				</tr>
+				<tr>
+					<th colspan="2"><img src="K2.jpg" width="1150px" /></th>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>General</h4></td>
+				</tr>
+				<tr>
+					<td><b>Length</b></td>
+					<td>2730mm</td>
+				</tr>
+				<tr>
+					<td><b>Curb Weight</b></td>
+					<td>280kg</td>
+				</tr>
+				<tr>
+					<td><b>Tyre Specification</b></td>
+					<td>167/77 R 13,36,Q</td>
+				</tr>
+				<tr>
+					<td><b>Wheel Rim Dia</b></td>
+					<td>13"</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Chassis</h4></td>
+				</tr>
+				<tr>
+					<td><b>Material</b></td>
+					<td>Tubular seamless carbon steel</td>
+				</tr>
+				<tr>
+					<td><b>Frame Weight</b></td>
+					<td>45kgf</td>
+				</tr>
+				<tr>
+					<td><b>Front Track</b></td>
+					<td>107.3</td>
+				</tr>
+				<tr>
+					<td><b>Rear Track</b></td>
+					<td>100.7cm</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Engine</h4></td>
+				</tr>
+				<tr>
+					<td><b>Engine Displacement</b></td>
+					<td>599cc</td>
+				</tr>
+				<tr>
+					<td><b>Engine Choice</b></td>
+					<td>Honda CBR600RR</td>
+				</tr>
+				<tr>
+					<td><b>Max Torque</b></td>
+					<td>66Nm @ 9000rpm</td>
+				</tr>
+				<tr>
+					<td><b>Fuel</b></td>
+					<td>RON 95</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Steering And Suspension</h4></td>
+				</tr>
+				<tr>
+					<td><b>Suspension Type</b></td>
+					<td>SLA Double Wishbone</td>
+				</tr>
+				<tr>
+					<td><b>Wheelbase</b></td>
+					<td>1832mm</td>
+				</tr>
+				<tr>
+					<td><b>Steering</b></td>
+					<td>Rack and Pinion type</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Brake</h4></td>
+				</tr>
+				<tr>
+					<td><b>Brake type</b></td>
+					<td>Disc Brake</td>
+				</tr>
+				<tr>
+					<td><b>Brake details</b></td>
+					<td>Multi-piston with brake biasing</td>
+				</tr>
+				<tr>
+					<td><b>Caliper</b></td>
+					<td>Fixed</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Engine Intake</h4></td>
+				</tr>
+				<tr>
+					<td colspan="2">Plenum made by rapid prototyping of volume 1.2l</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Transmission</h4></td>
+				</tr>
+				<tr>
+					<td colspan="2">Honda Civic Quaife Type Differential</td>
+				</tr>
+				<tr>
+					<td colspan="2">Torque biasing limited slip differential with custom built housing</td>
+				</tr>
+				<tr>
+					<td colspan="2">Chain and Spocket based final drive system designed</td>
+				</tr>
+			</big></big>
+			</table>
+		</div>
+		<div id="bac">
+			<table width="1240px" border="3" color="white" cellpadding="10">
+			<big><big>
+				<tr>
+					<th colspan="2"><h1>K2.2</h1></th>
+				</tr>
+				<tr>
+					<th colspan="2"><img src="K2.2.jpg" width="1150px" /></th>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>General</h4></td>
+				</tr>
+				<tr>
+					<td><b>Length</b></td>
+					<td>2730mm</td>
+				</tr>
+				<tr>
+					<td><b>Curb Weight</b></td>
+					<td>270kg</td>
+				</tr>
+				<tr>
+					<td><b>Tyre Specification</b></td>
+					<td>167/77 R 13,36,Q</td>
+				</tr>
+				<tr>
+					<td><b>Wheel Rim Dia</b></td>
+					<td>13"</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Chassis</h4></td>
+				</tr>
+				<tr>
+					<td><b>Material</b></td>
+					<td>Tubular seamless carbon steel</td>
+				</tr>
+				<tr>
+					<td><b>Frame Weight</b></td>
+					<td>45kgf</td>
+				</tr>
+				<tr>
+					<td><b>Front Track</b></td>
+					<td>107.3</td>
+				</tr>
+				<tr>
+					<td><b>Rear Track</b></td>
+					<td>100.7cm</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Engine</h4></td>
+				</tr>
+				<tr>
+					<td><b>Engine Displacement</b></td>
+					<td>599cc</td>
+				</tr>
+				<tr>
+					<td><b>Engine Choice</b></td>
+					<td>Honda CBR600RR</td>
+				</tr>
+				<tr>
+					<td><b>Max Torque</b></td>
+					<td>66Nm @ 9000rpm</td>
+				</tr>
+				<tr>
+					<td><b>Fuel</b></td>
+					<td>RON 95</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Steering And Suspension</h4></td>
+				</tr>
+				<tr>
+					<td><b>Suspension Type</b></td>
+					<td>SLA Double Wishbone</td>
+				</tr>
+				<tr>
+					<td><b>Wheelbase</b></td>
+					<td>1832mm</td>
+				</tr>
+				<tr>
+					<td><b>Steering</b></td>
+					<td>Rack and Pinion type</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Brake</h4></td>
+				</tr>
+				<tr>
+					<td><b>Brake type</b></td>
+					<td>Disc Brake</td>
+				</tr>
+				<tr>
+					<td><b>Brake details</b></td>
+					<td>Multi-piston with brake biasing</td>
+				</tr>
+				<tr>
+					<td><b>Caliper</b></td>
+					<td>Fixed</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Engine Intake</h4></td>
+				</tr>
+				<tr>
+					<td colspan="2">Plenum made by rapid prototyping of volume 1.2l</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Transmission</h4></td>
+				</tr>
+				<tr>
+					<td colspan="2">Honda Civic Quaife Type Differential</td>
+				</tr>
+				<tr>
+					<td colspan="2">Torque biasing limited slip differential with custom built housing</td>
+				</tr>
+				<tr>
+					<td colspan="2">Chain and Spocket based final drive system designed</td>
+				</tr>
+			</big></big>
+			</table>
+		</div>
+		<div id="bad">
+			<table width="1240px" border="3" color="white" cellpadding="10">
+			<big><big>
+				<tr>
+					<th colspan="2"><h1>K3</h1></th>
+				</tr>
+				<tr>
+					<th colspan="2"><img src="K3.jpg" width="1150px" /></th>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>General</h4></td>
+				</tr>
+				<tr>
+					<td><b>Length</b></td>
+					<td>2980mm</td>
+				</tr>
+				<tr>
+					<td><b>Curb Weight</b></td>
+					<td>226kg</td>
+				</tr>
+				<tr>
+					<td><b>Tyre Specification</b></td>
+					<td>Avon A92 20*7, 2-13</td>
+				</tr>
+				<tr>
+					<td><b>Wheel Rim Dia</b></td>
+					<td>13"</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Chassis</h4></td>
+				</tr>
+				<tr>
+					<td><b>Material</b></td>
+					<td>Tubular seamless carbon steel</td>
+				</tr>
+				<tr>
+					<td><b>Frame Weight</b></td>
+					<td>45kgf</td>
+				</tr>
+				<tr>
+					<td><b>Front Track</b></td>
+					<td>137cm</td>
+				</tr>
+				<tr>
+					<td><b>Rear Track</b></td>
+					<td>131cm</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Engine</h4></td>
+				</tr>
+				<tr>
+					<td><b>Engine Displacement</b></td>
+					<td>373.2cc</td>
+				</tr>
+				<tr>
+					<td><b>Engine Choice</b></td>
+					<td>KTM 390 Duke, Single Cylinder</td>
+				</tr>
+				<tr>
+					<td><b>Max Torque</b></td>
+					<td>33Nm @ 5500rpm</td>
+				</tr>
+				<tr>
+					<td><b>Fuel</b></td>
+					<td>RON 95</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Steering And Suspension</h4></td>
+				</tr>
+				<tr>
+					<td><b>Suspension Type</b></td>
+					<td>SLA Double Wishbone</td>
+				</tr>
+				<tr>
+					<td><b>Wheelbase</b></td>
+					<td>1720mm</td>
+				</tr>
+				<tr>
+					<td><b>Steering</b></td>
+					<td>Rack and Pinion type</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Brake</h4></td>
+				</tr>
+				<tr>
+					<td><b>Brake type</b></td>
+					<td>Disc Brake</td>
+				</tr>
+				<tr>
+					<td><b>Brake details</b></td>
+					<td>Multi-piston with brake biasing</td>
+				</tr>
+				<tr>
+					<td><b>Caliper</b></td>
+					<td>Fixed</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Engine Intake</h4></td>
+				</tr>
+				<tr>
+					<td colspan="2">Plenum made by rapid prototyping</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Transmission</h4></td>
+				</tr>
+				<tr>
+					<td colspan="2">Clutch type limited slip differential (Drexler)</td>
+				</tr>
+				<tr>
+					<td colspan="2">Chain and Spocket based final drive system designed</td>
+				</tr>
+			</big></big>
+			</table>
+		</div>
+		<div id="bab">
+			<table width="1240px" border="3" color="white" cellpadding="10">
+			<big><big>
+				<tr>
+					<th colspan="2"><h1>K1</h1></th>
+				</tr>
+				<tr>
+					<th colspan="2"><img src="K1.jpg" width="1150px" /></th>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>General</h4></td>
+				</tr>
+				<tr>
+					<td><b>Length</b></td>
+					<td>2400mm</td>
+				</tr>
+				<tr>
+					<td><b>Curb Weight</b></td>
+					<td>333kg</td>
+				</tr>
+				<tr>
+					<td><b>Tyre Specification</b></td>
+					<td>167/77 R 13,36,Q</td>
+				</tr>
+				<tr>
+					<td><b>Wheel Rim Dia</b></td>
+					<td>13"</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Chassis</h4></td>
+				</tr>
+				<tr>
+					<td><b>Material</b></td>
+					<td>Tubular seamless carbon steel</td>
+				</tr>
+				<tr>
+					<td><b>Frame Weight</b></td>
+					<td>45kgf</td>
+				</tr>
+				<tr>
+					<td><b>Front Track</b></td>
+					<td>125cm</td>
+				</tr>
+				<tr>
+					<td><b>Rear Track</b></td>
+					<td>118cm</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Engine</h4></td>
+				</tr>
+				<tr>
+					<td><b>Engine Displacement</b></td>
+					<td>599cc</td>
+				</tr>
+				<tr>
+					<td><b>Engine Choice</b></td>
+					<td>Honda CBR600RR</td>
+				</tr>
+				<tr>
+					<td><b>Max Torque</b></td>
+					<td>66Nm @ 9000rpm</td>
+				</tr>
+				<tr>
+					<td><b>Fuel</b></td>
+					<td>RON 95</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Steering And Suspension</h4></td>
+				</tr>
+				<tr>
+					<td><b>Suspension Type</b></td>
+					<td>SLA Double Wishbone</td>
+				</tr>
+				<tr>
+					<td><b>Wheelbase</b></td>
+					<td>1832mm</td>
+				</tr>
+				<tr>
+					<td><b>Steering</b></td>
+					<td>Rack and Pinion type</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h4>Brake</h4></td>
+				</tr>
+				<tr>
+					<td><b>Brake type</b></td>
+					<td>Disc Brake</td>
+				</tr>
+				<tr>
+					<td><b>Brake details</b></td>
+					<td>Multi-piston with brake biasing</td>
+				</tr>
+				<tr>
+					<td><b>Caliper</b></td>
+					<td>Fixed</td>
+				</tr>
+			</big></big>
+			</table>
+		</div>
+	</body>
+</html>
